@@ -1,33 +1,51 @@
-/*
-  * Decompiled with CFR 0_115.
-  */
- import java.awt.Component;
- import javax.swing.JFrame;
- import javax.swing.SwingUtilities;
- 
- public class TitlesFrame
- extends JFrame {
-     public TitlesFrame() {
-         this.initUI();
-     }
- 
-     private void initUI() {
-         this.setTitle("\u041a\u0440\u0438\u0432\u044b\u0435 \u0444\u0438\u0433\u0443\u0440\u044b");
-         this.setDefaultCloseOperation(3);
-         this.add(new TitlesPanel(78));
-         this.setSize(350, 350);
-         this.setLocationRelativeTo(null);
-     }
- 
-     public static void main(String[] args) {
-         SwingUtilities.invokeLater(new Runnable(){
- 
-             @Override
-             public void run() {
-                 TitlesFrame ps = new TitlesFrame();
-                 ps.setVisible(true);
-             }
-         });
-     }
- 
- }
+import javax.swing.JFrame;
+import javax.swing.SwingUtilities;/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author natalia
+ */
+public class TitlesFrame 
+extends JFrame
+{
+    /**
+     * конструктор класса TitlesFrame
+     */
+  public TitlesFrame()
+  {
+    initUI();
+  }
+/**
+ * метод осуществляет вывод на экран пользовательского окна с результатом работы программы
+ */
+  private void initUI()
+  {
+    setTitle("РљСЂРёРІС‹Рµ С„РёРіСѓСЂС‹");
+    setDefaultCloseOperation(3);
+    add(new TitlesPanel(57));
+    setSize(350, 350);
+    setLocationRelativeTo(null);
+  }
+/**
+ * главный метод программы
+ * @param args параметр указывает интерпретатору самый главный класс программы
+ */
+  public static void main(String[] args)
+  {
+    SwingUtilities.invokeLater(new Runnable()
+    {
+      public void run()
+      {
+        TitlesFrame ps = new TitlesFrame();
+        ps.setVisible(true);
+      }
+    });
+  };
+
+    
+    
+}
