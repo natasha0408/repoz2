@@ -19,9 +19,18 @@ public class ShapeFactory {
   public int height = 25;
 /**
  * 
- * конструкто класса ShapeFactory создаёт фигуру
- * @param shape_type параметр указывает какую фигуру рисовать
- */
+ * ShapeFactory - С‚РёРї С„РёРіСѓСЂС‹
+ * @param shape_type
+ * switch (shape_type / 10) case 1: РЁРµСЃС‚РёСѓРіРѕР»СЊРЅРёРє
+ * case 3: Р—РІРµР·РґР°
+ * case 5: РљРІР°РґСЂР°С‚
+ * case 7: РўСЂРµСѓРіРѕР»СЊРЅРёРє
+ * case 9: РљСЂСѓРі Р±РµР· СЃРµРєС‚РѕСЂР°
+ * switch (shape_type % 10) case 1: РЁРёСЂР°РЅР° Р»РёРЅРёРё 3СЂС…
+ * case 4: РЁРёСЂРёРЅР° Р»РёРЅРёРё 7 СЂС…
+ * case 7: Р“СЂР°РґРёРµРЅС‚
+ * case 8: Р¦РІРµС‚ С„РёРіСѓСЂС‹ РєСЂР°СЃРЅС‹Р№
+ **/
   public ShapeFactory(int shape_type) {
     this.stroke = new BasicStroke(3.0F);
     switch (shape_type / 10) {
@@ -78,12 +87,7 @@ public class ShapeFactory {
     }
   }
 /**
- * метод класса Shape для рисования фигуры
- * @param arms параметр задает количество углов фигуры
- * @param center точка определяет центр фигуры
- * @param rOuter радиус внешней части фигуры
- * @param rInner радиус внешней части фигуры
- * @return метод возвращает экземпляр класса Shape
+ * РњРµС‚РѕРґ РґР»СЏ РѕРїСЂРµРґРµР»РµРЅРёСЏ СЂР°Р·РјРµС‰РµРЅРёСЏ С„РёРіСѓСЂС‹
  */
   private static Shape createStar(int arms, Point center, double rOuter, double rInner)
   {

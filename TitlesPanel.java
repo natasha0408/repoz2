@@ -7,11 +7,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.geom.AffineTransform;
 import javax.swing.JPanel;
-import javax.swing.Timer;/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+import javax.swing.Timer;
 
 /**
  *
@@ -26,7 +22,7 @@ public class TitlesPanel extends JPanel
   private int start_angle = 0;
   private int shape;
 /**
- * конструктор класса TitlesPanel
+ * Конструктор для класса TitlesPanel
  * @param _shape параметр определяет какая из указанных фигур будет рисоваться
  */
   public TitlesPanel(int _shape)
@@ -38,7 +34,7 @@ public class TitlesPanel extends JPanel
     this.animation.start();
   }
 /**
- * метод определяет выполняемое действие - перерисовать фигуру или нет
+ * Метод для определения выполняемого действия - перерисовать фигуру или нет
  * @param arg0 метод, определяющий выполняемое действие - перерисовать фигуру или нет
  */
   public void actionPerformed(ActionEvent arg0)
@@ -47,8 +43,8 @@ public class TitlesPanel extends JPanel
       repaint();
   }
 /**
- * метод осуществления рисования
- * @param g параметр указывает что именно надо нарисовать  
+ * Метод осуществляет рисование
+ * @param g параметр указывает какую фигуру нарисовать  
  */
   private void doDrawing(Graphics g)
   {
@@ -80,7 +76,7 @@ public class TitlesPanel extends JPanel
     this.is_done = true;
   }
 /**
- * метод осуществляет рисование елемента фигуры
+ * Метод для рисования элементов фигуры
  * @param g параметр описывает какой именно елемент фигуры будет рисоватся 
  */
   public void paintComponent(Graphics g)

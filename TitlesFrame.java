@@ -1,9 +1,5 @@
 import javax.swing.JFrame;
-import javax.swing.SwingUtilities;/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+import javax.swing.SwingUtilities;
 
 /**
  *
@@ -13,14 +9,14 @@ public class TitlesFrame
 extends JFrame
 {
     /**
-     * конструктор класса TitlesFrame
+     * Конструктор для класса TitlesFrame
      */
   public TitlesFrame()
   {
     initUI();
   }
 /**
- * метод осуществляет вывод на экран пользовательского окна с результатом работы программы
+ * Метод для вывода графического интерфейся пользователя
  */
   private void initUI()
   {
@@ -31,8 +27,8 @@ extends JFrame
     setLocationRelativeTo(null);
   }
 /**
- * главный метод программы
- * @param args параметр указывает интерпретатору самый главный класс программы
+ * Главный метод программы
+ * @param args указывает главный класс программы
  */
   public static void main(String[] args)
   {
