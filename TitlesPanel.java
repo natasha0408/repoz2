@@ -22,8 +22,8 @@ public class TitlesPanel extends JPanel
   private int start_angle = 0;
   private int shape;
 /**
- * Конструктор для класса TitlesPanel
- * @param _shape параметр определяет какая из указанных фигур будет рисоваться
+ * Конструктор для класса TitlesPanel;
+ * @param _shape параметр определяет какая из указанных фигур будет рисоваться;
  */
   public TitlesPanel(int _shape)
   {
@@ -34,8 +34,8 @@ public class TitlesPanel extends JPanel
     this.animation.start();
   }
 /**
- * Метод для определения выполняемого действия - перерисовать фигуру или нет
- * @param arg0 метод, определяющий выполняемое действие - перерисовать фигуру или нет
+ * Метод для определения выполняемого действия - перерисовать фигуру или нет;
+ * @param arg0 метод, определяющий выполняемое действие - перерисовать фигуру или нет;
  */
   public void actionPerformed(ActionEvent arg0)
   {
@@ -43,8 +43,8 @@ public class TitlesPanel extends JPanel
       repaint();
   }
 /**
- * Метод осуществляет рисование
- * @param g параметр указывает какую фигуру нарисовать  
+ * Метод осуществляет рисование;
+ * @param g параметр указывает какую фигуру нарисовать;  
  */
   private void doDrawing(Graphics g)
   {

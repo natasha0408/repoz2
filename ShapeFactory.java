@@ -8,7 +8,6 @@ import java.awt.geom.*;
 
 
 /**
- *
  * @author natalia
  */
 public class ShapeFactory {
@@ -19,17 +18,17 @@ public class ShapeFactory {
   public int height = 25;
 /**
  * 
- * ShapeFactory - тип фигуры
- * @param shape_type
- * switch (shape_type / 10) case 1: Шестиугольник
- * case 3: Звезда
- * case 5: Квадрат
- * case 7: Треугольник
- * case 9: Круг без сектора
- * switch (shape_type % 10) case 1: Ширана линии 3рх
- * case 4: Ширина линии 7 рх
- * case 7: Градиент
- * case 8: Цвет фигуры красный
+ * ShapeFactory - тип фигуры;
+ * @param shape_type;
+ * switch (shape_type / 10) case 1: Шестиугольник;
+ * case 3: Звезда;
+ * case 5: Квадрат;
+ * case 7: Треугольник;
+ * case 9: Круг без сектора;
+ * switch (shape_type % 10) case 1: Ширана линии 3рх;
+ * case 4: Ширина линии 7 рх;
+ * case 7: Градиент;
+ * case 8: Цвет фигуры красный;
  **/
   public ShapeFactory(int shape_type) {
     this.stroke = new BasicStroke(3.0F);

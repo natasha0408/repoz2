@@ -9,14 +9,14 @@ public class TitlesFrame
 extends JFrame
 {
     /**
-     * Конструктор для класса TitlesFrame
+     * Конструктор для класса TitlesFrame;
      */
   public TitlesFrame()
   {
     initUI();
   }
 /**
- * Метод для вывода графического интерфейся пользователя
+ * Метод для вывода графического интерфейся пользователя;
  */
   private void initUI()
   {
@@ -27,8 +27,8 @@ extends JFrame
     setLocationRelativeTo(null);
   }
 /**
- * Главный метод программы
- * @param args указывает главный класс программы
+ * Главный метод программы;
+ * @param args указывает главный класс программы;
  */
   public static void main(String[] args)
   {
